@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="loginForm" onsubmit="validateForm()"" method="post">
+        <label>Username</label><br>
+        <input type="text" id="username" placeholder="Nickname" ><br>
+        <label>Password</label></br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <!-- <label>Select Gender:</label><br>
+        <select id="genderId" name="genderSelect" form="selectForm">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br>
+        <label>Check</label>
+        <input type="checkbox"><br> -->
+        <input type="submit" value="Submit" id="#submitBtn">
+
+        <p id="error"></p>
+
+        <p id="checkTxt"></p>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
