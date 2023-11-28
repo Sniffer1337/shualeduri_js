@@ -64,7 +64,7 @@ loginForm?.addEventListener("submit", (e) => {
     return username.value === user.username && password.value === user.password;
   });
 
-  let empty = document.forms["loginForm"]["username"]["password"].value;
+  let empty = document.forms["loginForm"]["username"].value;
 
   if (users.length > 0) {
     checkTxt.innerHTML = "Log In Success";
@@ -72,7 +72,14 @@ loginForm?.addEventListener("submit", (e) => {
     checkTxt.innerHTML = "Monacemebi Arunda Ikos Carieli.";
     return false;
   } else error.innerHTML = "Arasworia.";
+
 });
+
+function validateForm(empty) {
+  if (empty == "") {
+    return false;
+  }
+}
 
 // 3 Davaleba
 
