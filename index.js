@@ -64,7 +64,7 @@ loginForm?.addEventListener("submit", (e) => {
     return username.value === user.username && password.value === user.password;
   });
 
-  let empty = document.forms["loginForm"]["username"].value;
+  let empty = document.forms["loginForm"]["username"]["password"].value;
 
   if (users.length > 0) {
     checkTxt.innerHTML = "Log In Success";
